@@ -1,0 +1,95 @@
+body {
+  margin:0;
+  padding:0;
+  font-size: calc(10px + 1vmin);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-bottom: 0.05em solid #a1a1a1;
+}
+
+nav {
+  margin-top: 2em;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 1em;
+  color: coral;
+}
+
+a:hover {
+  color: rgb(255, 80, 80);
+  font-weight: bolder;
+}
+
+button {
+  padding: 0.5em;
+  font-size: medium;
+  border: 0;
+  border-radius: 20%;
+  color: white;
+  background-color: coral;
+  margin: auto;
+}
+
+button:hover {
+  background-color: rgb(255, 80, 80);
+  font-weight: bolder;
+}
+
+#infoBox, #expectationBox, #experienceBox {
+  display: none;
+}
+
+ul {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  border-top: 0.05em solid #a1a1a1;
+  margin-top: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.slideshowContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
